@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="148dp"
+    android:layout_marginBottom="5dp"
+    tools:context=".row_pdf_user"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="148dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/pdfRl"
+            android:background="@android:color/transparent"
+            >
+
+            <ImageView
+                android:id="@+id/ImageFlat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/door2">
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleTv"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_toEndOf="@id/categoryTv"
+            android:text="Room Title"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+
+
+
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Open">
+
+
+        </Button>
+
+        <TextView
+            android:id="@+id/decriptionTv"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_toEndOf="@id/pdfRl"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/titleTv"
+            android:text="Room Decription"
+            android:maxLines="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:ellipsize="end"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/categoryTv"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/pdfRl"
+            android:text="Category"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/dataTv"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:textAlignment="center"
+            android:layout_toStartOf="@id/categoryTv"
+            android:layout_alignParentBottom="true"
+            android:text="  "
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
